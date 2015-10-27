@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="collectionView" destination="5FV-re-rcc" id="OlM-XF-OGY"/>
+                <outlet property="tableView" destination="nU6-RH-dcs" id="J8H-RK-TZd"/>
+                <outlet property="topView" destination="nMT-bR-RgK" id="sD4-dg-s1q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="nU6-RH-dcs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ToR-wO-faU"/>
+                        <outlet property="delegate" destination="-1" id="Zyj-Ss-jc5"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nU6-RH-dcs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1D4-Zs-FC7"/>
+                <constraint firstItem="nU6-RH-dcs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="a14-H4-2LG"/>
+                <constraint firstAttribute="bottom" secondItem="nU6-RH-dcs" secondAttribute="bottom" id="l8R-TA-3IT"/>
+                <constraint firstAttribute="trailing" secondItem="nU6-RH-dcs" secondAttribute="trailing" id="vd3-CN-gZE"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+        <view contentMode="scaleToFill" id="nMT-bR-RgK" userLabel="topView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5FV-re-rcc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <animations/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="o19-6v-OfQ">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zoK-sJ-cSK"/>
+                        <outlet property="delegate" destination="-1" id="UhR-wn-of4"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="1" green="0.2405608367" blue="0.2384012476" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="5FV-re-rcc" firstAttribute="top" secondItem="nMT-bR-RgK" secondAttribute="top" id="LoO-Gm-IFo"/>
+                <constraint firstItem="5FV-re-rcc" firstAttribute="leading" secondItem="nMT-bR-RgK" secondAttribute="leading" id="P4U-Sn-RXb"/>
+                <constraint firstAttribute="trailing" secondItem="5FV-re-rcc" secondAttribute="trailing" id="XnT-fa-ffl"/>
+                <constraint firstAttribute="bottom" secondItem="5FV-re-rcc" secondAttribute="bottom" id="bW9-NB-xbm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="356.5" y="-159"/>
+        </view>
+    </objects>
+</document>
