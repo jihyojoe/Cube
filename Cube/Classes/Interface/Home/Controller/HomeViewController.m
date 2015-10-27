@@ -77,7 +77,6 @@
 
     HomeOneCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[HomeOneCollectionCell identifier] forIndexPath:indexPath];
     NSLog(@"%@",cell.subviews);
-    cell.backgroundColor = [UIColor whiteColor];
     return cell;
 }
 
