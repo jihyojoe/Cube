@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
-                <outlet property="collectionView" destination="5FV-re-rcc" id="OlM-XF-OGY"/>
+                <outlet property="collectionView" destination="Gcn-qM-4zK" id="uAZ-YG-Ib2"/>
                 <outlet property="tableView" destination="nU6-RH-dcs" id="J8H-RK-TZd"/>
                 <outlet property="topView" destination="nMT-bR-RgK" id="sD4-dg-s1q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -42,31 +42,27 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5FV-re-rcc">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Gcn-qM-4zK">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                     <animations/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="o19-6v-OfQ">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LtI-te-VNx">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="zoK-sJ-cSK"/>
-                        <outlet property="delegate" destination="-1" id="UhR-wn-of4"/>
-                    </connections>
                 </collectionView>
             </subviews>
             <animations/>
             <color key="backgroundColor" red="1" green="0.2405608367" blue="0.2384012476" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="5FV-re-rcc" firstAttribute="top" secondItem="nMT-bR-RgK" secondAttribute="top" id="LoO-Gm-IFo"/>
-                <constraint firstItem="5FV-re-rcc" firstAttribute="leading" secondItem="nMT-bR-RgK" secondAttribute="leading" id="P4U-Sn-RXb"/>
-                <constraint firstAttribute="trailing" secondItem="5FV-re-rcc" secondAttribute="trailing" id="XnT-fa-ffl"/>
-                <constraint firstAttribute="bottom" secondItem="5FV-re-rcc" secondAttribute="bottom" id="bW9-NB-xbm"/>
+                <constraint firstItem="Gcn-qM-4zK" firstAttribute="leading" secondItem="nMT-bR-RgK" secondAttribute="leading" id="41i-r0-Gcf"/>
+                <constraint firstAttribute="bottom" secondItem="Gcn-qM-4zK" secondAttribute="bottom" id="9ZJ-gf-9iX"/>
+                <constraint firstItem="Gcn-qM-4zK" firstAttribute="top" secondItem="nMT-bR-RgK" secondAttribute="top" id="B08-I6-qbZ"/>
+                <constraint firstAttribute="trailing" secondItem="Gcn-qM-4zK" secondAttribute="trailing" id="Cxz-qY-FC4"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="356.5" y="-159"/>
+            <point key="canvasLocation" x="356.5" y="-187"/>
         </view>
     </objects>
 </document>

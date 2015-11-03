@@ -9,7 +9,7 @@
 
 #import "HomeViewController.h"
 #import "HomeOneCell.h"
-#import "HomeOneCollectionCell.h"
+#import "HomeCollectionCell.h"
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -33,7 +33,7 @@
     [self.tableView addSubview:self.topView];
     
     //注册cell
-    [self.collectionView registerClass:[HomeOneCollectionCell class] forCellWithReuseIdentifier:[HomeOneCollectionCell identifier]];
+    [self.collectionView registerClass:[HomeCollectionCell class] forCellWithReuseIdentifier:[HomeCollectionCell identifier]];
 }
 
 #pragma mark - UITableViewDataSource
@@ -74,8 +74,10 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-
-    HomeOneCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[HomeOneCollectionCell identifier] forIndexPath:indexPath];
+    
+    HomeCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[HomeCollectionCell identifier] forIndexPath:indexPath];
+    
+    
     NSLog(@"%@",cell.subviews);
     return cell;
 }

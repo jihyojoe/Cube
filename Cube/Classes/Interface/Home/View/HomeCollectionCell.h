@@ -1,5 +1,5 @@
 //
-//  HomeOneCollectionCell.h
+//  HomeCollectionCell.h
 //  Cube
 //
 //  Created by silent on 15/10/27.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeOneCollectionCell : UICollectionViewCell
+@interface HomeCollectionCell : UICollectionViewCell
 
-+ (NSString *)identifier;
++(NSString *)identifier;
 
 @end

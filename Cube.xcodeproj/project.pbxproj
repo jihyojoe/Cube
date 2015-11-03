@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CB68B4761BDF1B340068C057 /* HomeOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB68B4751BDF1B340068C057 /* HomeOneCell.xib */; settings = {ASSET_TAGS = (); }; };
-		CB68B47F1BDF25440068C057 /* HomeOneCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB68B47D1BDF25440068C057 /* HomeOneCollectionCell.m */; settings = {ASSET_TAGS = (); }; };
-		CB68B4801BDF25440068C057 /* HomeOneCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB68B47E1BDF25440068C057 /* HomeOneCollectionCell.xib */; settings = {ASSET_TAGS = (); }; };
+		CB68B4C31BDF82080068C057 /* HomeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB68B4C11BDF82080068C057 /* HomeCollectionCell.m */; settings = {ASSET_TAGS = (); }; };
+		CB68B4C41BDF82080068C057 /* HomeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB68B4C21BDF82080068C057 /* HomeCollectionCell.xib */; settings = {ASSET_TAGS = (); }; };
 		CBD204191BDE00AD003E54B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD204181BDE00AD003E54B2 /* main.m */; };
 		CBD204241BDE00AD003E54B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD204231BDE00AD003E54B2 /* Assets.xcassets */; };
 		CBD204321BDE00AE003E54B2 /* CubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD204311BDE00AE003E54B2 /* CubeTests.m */; };
@@ -46,9 +46,9 @@
 
 /* Begin PBXFileReference section */
 		CB68B4751BDF1B340068C057 /* HomeOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeOneCell.xib; sourceTree = "<group>"; };
-		CB68B47C1BDF25440068C057 /* HomeOneCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeOneCollectionCell.h; sourceTree = "<group>"; };
-		CB68B47D1BDF25440068C057 /* HomeOneCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeOneCollectionCell.m; sourceTree = "<group>"; };
-		CB68B47E1BDF25440068C057 /* HomeOneCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeOneCollectionCell.xib; sourceTree = "<group>"; };
+		CB68B4C01BDF82080068C057 /* HomeCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionCell.h; sourceTree = "<group>"; };
+		CB68B4C11BDF82080068C057 /* HomeCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionCell.m; sourceTree = "<group>"; };
+		CB68B4C21BDF82080068C057 /* HomeCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionCell.xib; sourceTree = "<group>"; };
 		CBD204141BDE00AD003E54B2 /* Cube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD204181BDE00AD003E54B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CBD204231BDE00AD003E54B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -254,9 +254,9 @@
 				CBD204831BDE0FEE003E54B2 /* HomeOneCell.h */,
 				CBD204841BDE0FEE003E54B2 /* HomeOneCell.m */,
 				CB68B4751BDF1B340068C057 /* HomeOneCell.xib */,
-				CB68B47C1BDF25440068C057 /* HomeOneCollectionCell.h */,
-				CB68B47D1BDF25440068C057 /* HomeOneCollectionCell.m */,
-				CB68B47E1BDF25440068C057 /* HomeOneCollectionCell.xib */,
+				CB68B4C01BDF82080068C057 /* HomeCollectionCell.h */,
+				CB68B4C11BDF82080068C057 /* HomeCollectionCell.m */,
+				CB68B4C21BDF82080068C057 /* HomeCollectionCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -452,8 +452,8 @@
 				CBD2046E1BDE034A003E54B2 /* FormulaViewController.xib in Resources */,
 				CBD204241BDE00AD003E54B2 /* Assets.xcassets in Resources */,
 				CB68B4761BDF1B340068C057 /* HomeOneCell.xib in Resources */,
-				CB68B4801BDF25440068C057 /* HomeOneCollectionCell.xib in Resources */,
 				CBD204691BDE033A003E54B2 /* HomeViewController.xib in Resources */,
+				CB68B4C41BDF82080068C057 /* HomeCollectionCell.xib in Resources */,
 				CBD204791BDE092F003E54B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB68B4C31BDF82080068C057 /* HomeCollectionCell.m in Sources */,
 				CBD2047C1BDE0972003E54B2 /* ViewController.m in Sources */,
 				CBD204611BDE02F2003E54B2 /* TabBarController.m in Sources */,
 				CBD204861BDE0FEE003E54B2 /* HomeOneCell.m in Sources */,
@@ -488,7 +489,6 @@
 				CBD204811BDE0A50003E54B2 /* UIColor+Hex.m in Sources */,
 				CBD2045E1BDE025D003E54B2 /* AppDelegate.m in Sources */,
 				CBD204681BDE033A003E54B2 /* HomeViewController.m in Sources */,
-				CB68B47F1BDF25440068C057 /* HomeOneCollectionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
